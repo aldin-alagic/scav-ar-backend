@@ -24,7 +24,7 @@ export const register = async (req, res) => {
     // Get first level from DB
     const firstLevel = await prisma.level.findUnique({
       where: {
-        order: 0,
+        order: 1,
       },
     });
 
